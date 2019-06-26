@@ -3,8 +3,12 @@ project(cop3014_lab06_function_b)
 
 set(CMAKE_CXX_STANDARD 11)
 
-add_executable(scope.exe scope.cpp)
+add_executable(6-2a.exe 6-2a.cpp)
+add_executable(6-2b.exe 6-2b.cpp)
+add_executable(6-2c.exe 6-2c.cpp)
+add_executable(6-2d.exe 6-2d.cpp)
 add_executable(money.exe money.cpp)
+add_executable(scope.exe scope.cpp)
 add_executable(milesToKilo.exe milesToKilo.cpp)
 add_executable(convertmoney.exe convertmoney.cpp)
 add_executable(baseball.exe baseball.cpp)
