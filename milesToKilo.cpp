@@ -59,6 +59,7 @@ int main()
 float  convertKiloToMiles(float kilo)
 {
    // implement
+    return kilo * KILOTOMILES;
 }
 
 //********************************************************************
@@ -71,4 +72,5 @@ float  convertKiloToMiles(float kilo)
 float  convertMilesToKilo(float miles)
 {
    // implement
+    return miles * MILESTOKILOS;
 }

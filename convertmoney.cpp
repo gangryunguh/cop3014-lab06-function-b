@@ -88,6 +88,8 @@ int main ()
 void  convertMulti(float dollars, float& euros, float& pesos)
 {
    // implement
+    euros = dollars * EUROSEXCHANGE;
+    pesos = dollars * PESOSEXCHANGE;
 }
 
 //  ************************************************************************
@@ -102,6 +104,9 @@ void  convertMulti(float dollars, float& euros, float& pesos)
 void  convertMulti(float dollars, float& euros, float& pesos, float& yen)
 {
    // implement
+    euros = dollars * EUROSEXCHANGE;
+    pesos = dollars * PESOSEXCHANGE;
+    yen = dollars * YENEXCHANGE;
 }
 
 //  ****************************************************************************
@@ -115,6 +120,7 @@ void  convertMulti(float dollars, float& euros, float& pesos, float& yen)
 float convertToYen(float dollars)
 {
    // implement
+    return dollars * YENEXCHANGE;
 }
 
 //  ****************************************************************************
@@ -128,6 +134,7 @@ float convertToYen(float dollars)
 float convertToEuros(float dollars)
 {
    // implement
+    return  dollars * EUROSEXCHANGE;
 }
 
 //  *****************************************************************************

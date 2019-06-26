@@ -54,15 +54,17 @@ int main()
 
 void normalizeMoney(float& dollars, int cents)
 {
-	float total = 0;
+    float total=0;
 
-	// Fill in the definition of sum as a static local variable
+    static float sum = 0.0;
 
+    dollars = float(cents) / 100;
 
-	// Fill in the code to convert cents to dollars
+    total = total + dollars;
+    sum = sum + dollars;
 
-	cout << "We have added another $" << dollars << "	to our total" << endl;
-	cout << "Our total so far is	$" << sum << endl;
+    cout << "We have added another $" << dollars <<"  to our total" << endl;
+    cout << "Our total so far is  $" << sum << endl;
 
-	cout << "The value of our local variable total is $" << total << endl;
+    cout << "The value of our local  variable total is $" << total << endl;
 }

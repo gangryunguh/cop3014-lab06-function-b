@@ -14,41 +14,43 @@ void findCircumference(float, float&);
 
 int main()
 {
-	cout << fixed << showpoint << setprecision(2);
-	float radius = 12;
+    cout << fixed << showpoint << setprecision(2);
+    float radius = 12;
 
-	cout << " Main function outer block" << endl;
-	cout << " LIST THE IDENTIFIERS THAT are active here" << endl << endl;
+    cout <<" Main function outer block" << endl;
+    cout <<" PI, RATE, findArea, findCircumference, and radius are active here"
+         << endl << endl;
+    {
+        float area;
+        cout << "Main function first inner block" << endl;
+        cout << "PI, RATE, findArea, findCircumference, radius and area are active here"
+             << endl << endl;
 
-	{
-		float area;
+        findArea(radius,area);
 
-		cout << "Main function first inner block" << endl;
-		cout << "LIST THE IDENTIFIERS THAT are active here" << endl << endl;
+        cout << "The radius = " << radius << endl;
+        cout << "The area = " << area << endl << endl;
+    }
 
-		// Fill in the code to call findArea here
+    {
+        float radius = 10;
+        float circumference;
 
-		cout << "The radius = " << radius << endl;
-		cout << "The area = " << area << endl << endl;
-	}
+        cout << "Main function second inner block" << endl;
+        cout << "PI, RATE, findArea, findCircumference, radius and circumference are active here"
+             << endl << endl;
 
-	{
-		float radius = 10;
-		float circumference;
+        findCircumference(radius, circumference);
 
-		cout << "Main function second inner block" << endl;
-		cout << "LIST THE IDENTIFIERS THAT are active here" << endl << endl;
+        cout << "The radius = " << radius << endl;
+        cout << "The circumference = " << circumference << endl << endl;
+    }
 
-		// Fill in the code to call findCircumference here
+    cout << "Main function after all the calls" << endl;
+    cout << "PI, RATE, findArea, findCircumference,  and radius are active here"
+         << endl << endl;
 
-		cout << "The radius = " << radius << endl;
-		cout << "The circumference = " << circumference << endl << endl;
-	}
-
-	cout << "Main function after all the calls" << endl;
-	cout << "LIST THE IDENTIFIERS THAT are active here" << endl << endl;
-
-	return 0;
+    return 0;
 }
 
 //	*********************************************************************
@@ -62,11 +64,11 @@ int main()
 
 void findArea(float rad, float& answer)
 {
-	cout << "AREA FUNCTION" << endl << endl;
-	cout << "LIST THE IDENTIFIERS THAT are active here" << endl << endl;
+    cout << "AREA FUNCTION" << endl << endl;
+    cout << "PI, RATE, findArea, findCircumference, rad and answerare active here"
+         << endl << endl;
 
-	// FILL in the code, given that parameter rad contains the radius, that
-	// will find the area to be stored in answer
+    answer = PI * rad * rad;
 }
 
 //	******************************************************************************
@@ -80,9 +82,9 @@ void findArea(float rad, float& answer)
 
 void findCircumference(float length, float& distance)
 {
-	cout << "CIRCUMFERENCE FUNCTION" << endl << endl;
-	cout << "LIST THE IDENTIFIERS THAT are active here" << endl << endl;
+    cout << "CIRCUMFERENCE FUNCTION" << endl << endl;
+    cout << "PI, RATE, findArea, findCircumference, length, and distance are active here"
+         << endl << endl;
 
-	// FILL in the code, given that parameter length contains the radius,
-	// that will find the circumference to be stored in distance
+    distance = 2 * PI * length;
 }
